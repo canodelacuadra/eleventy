@@ -43,7 +43,7 @@ pagination:
        <ul class="nav flex-column mb-2">
 {%- for item in pagination.items %}
   <li class="nav-item bg-info border-bottom border-dark">
-     <a class="nav-link text-light" href="{{'/post/{{ item|slug }}'|url}}">{{ item }}</a>
+     <a class="nav-link text-light" href="{{ item|slug }}">{{ item }}</a>
   </li>
 {% endfor -%}
 </ul>
