@@ -9,11 +9,16 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 };
 
+
+
+
+
+
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('img');
     eleventyConfig.addPassthroughCopy('css');
     eleventyConfig.addPassthroughCopy('js');
     return {
-        passthroughFileCopy: true
+      passthroughFileCopy: true
     };
 };
